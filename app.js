@@ -1,14 +1,14 @@
 var order = prompt("what do you want coffee or tea ??");
 
 
-while(order != "cofee" && order != "tea"){
+while(order != "coffee" && order != "tea"){
     order = prompt("what do you want coffee or tea ??");
 }
 var itemOrder = '';
 
 if(order == "coffee")
 {
-  itemOrder = '<img src="coffee.jpd"/>';
+  itemOrder = '<img src="coffee.jpg"/>';
 }
 else if(order == "tea")
 {
@@ -19,6 +19,6 @@ var numofcups = prompt('How many cups do you want ?');
 var result = '';
 for(var i= 0; i<numofcups; i++)
 {
-    result = result + numofcups;
+    result = result + itemOrder;
 }
-document.write(result);
+document.write(result)
